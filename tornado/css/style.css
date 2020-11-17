@@ -1,0 +1,21 @@
+#cppn-canvas {
+    position: absolute;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.63);
+    height: 80vh;
+    width: 80vh;
+    top: 10vh;
+    left: calc(50vw - 40vh);
+    /*image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;*/
+    image-rendering: pixelated;
+    filter: blur(0.5vh)
+    /*image-rendering: crisp-edges;*/
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}

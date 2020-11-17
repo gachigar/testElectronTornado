@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>CPPN with music</title>
+	<meta charset="UTF-8">
+    <script src="tf1204.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Prosto+One" rel="stylesheet"> 
+    <link href="style.css" rel="stylesheet"></link>
+</head>
+<body>
+<canvas height="120" width="120" id="cppn-canvas"></canvas>
+
+<audio preload="metadata" controls class="player">
+    <source id="audioSourceUrl" src="http://127.0.0.1:8000/files/Crystal Castles - Vietnam.mp3" type="audio/mp3">
+</audio>
+
+<form id="uploader" action="http://127.0.0.1:8000" method="post" enctype="multipart/form-data">
+    <input id="file" type="file" name="file" accept="*" onchange="javascript:this.form.submit();">
+</form>
+
+<div id="musSelector">
+
+</div>
+
+<canvas id="infa" width="0" height="0" style="bottom:0; left:0; position: absolute"></canvas>
+<script src="model.js"></script>
+<script src="script.js"></script>
+<script>
+    animateCppn("cppn-canvas");
+</script>
+</body>
+</html>

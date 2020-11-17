@@ -1,0 +1,58 @@
+#cppn-canvas {
+    position: absolute;
+    /*height: 80vh;
+    width: 80vh;
+    top: 10vh;
+    left: calc(50vw - 40vh);
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;*/
+    image-rendering: pixelated;
+    filter: blur(0.5vh);
+    height: 100vh;
+    
+    /*image-rendering: crisp-edges;*/
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.player {
+    bottom:0.7vh;
+    width: 100vw; 
+    /*left:1em; */
+    position:absolute; 
+    opacity:0.4; 
+    background:transparent;
+    
+}
+
+#musSelector {
+    position: absolute;
+    left: 100vh;
+}
+
+#uploader {
+    /*position: absolute;*/
+    margin-left: 101.2vh;
+    margin-top: 1vh;
+}
+
+.musElement {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1.5vh;
+    color: white;
+    margin: 1vh;
+    min-width: calc(100vw - 105vh);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.musElement:hover {
+    transform: scale(1.05);
+}
