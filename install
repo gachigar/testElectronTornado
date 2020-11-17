@@ -1,0 +1,16 @@
+#!/bin/bash
+sudo apt install python3
+sudo apt install python3-pip
+pip3 install tornado
+sudo apt install npm
+sudo apt install git
+mkdir visualizator && cd visualizator
+git clone https://github.com/gachigar/testElectronTornado
+cd testElectronTornado/electro/
+npm init -y
+npm i --save-dev electron
+cd ../tornado
+python3 script.py &
+cd ../electro
+npm start
+
